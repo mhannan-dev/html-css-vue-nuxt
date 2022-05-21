@@ -27,13 +27,13 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
   img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     background-position: center center;
     background-size: cover;
@@ -45,7 +45,7 @@ export default {
     top: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
