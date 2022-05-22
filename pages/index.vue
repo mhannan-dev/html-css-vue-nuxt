@@ -3,12 +3,15 @@
     <Hero />
     <!-- Search -->
     <div class="container search">
-      <input
+     <input
         type="text"
-        placeholder="Search movie"
+        placeholder="Search"
+        @keyup.enter="$fetch"
         v-model.lazy="searchInput"
       />
-      <button v-show="searchInput !== ''" class="button">Clear Search</button>
+      <button v-show="searchInput !== ''" @click="clearSearch" class="button">
+        Clear Search
+      </button>
     </div>
     <!--Movies-->
     <div class="container movies">
@@ -76,7 +79,13 @@ export default {
     };
   },
   async fetch() {
-    await this.getMovies();
+    if(this.searchInput === ''){
+      await this.getMovies();
+      return
+    }
+    await this.searchMovies();
+    // if(this.searchInput !== ''){
+    // }
   },
   methods: {
     async getMovies() {
@@ -96,9 +105,15 @@ export default {
       const result = await data;
       result.data.results.forEach((movie) => {
         this.searchedMovies.push(movie);
+        console.log(this.searchedMovies);
       });
     },
+    clearSearch() {
+      this.searchInput = ''
+      this.searchedMovies = []
+    },
   },
+  
 };
 </script>
 <style lang="scss" scoped>
