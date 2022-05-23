@@ -2,10 +2,10 @@
     <div>
         <v-container>
             <v-row>
-                <v-col lg="4">
+                <v-col lg="5">
                     <img src="../assets/8401.png" alt="Image" width="100%">
                 </v-col>
-                <v-col lg="8">
+                <v-col lg="7">
                     <h4 class="about-heading">I am Muhammad Hannan</h4>
                     <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel
                         placeat optio incidunt, quo dignissimos illum fugiat enim unde delectus nesciunt architecto
