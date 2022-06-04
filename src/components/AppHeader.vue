@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-app-bar app color="white" elevation="6" elevate-on-scroll style="padding: 0px 90px">
-            <v-toolbar-title> Hello World </v-toolbar-title>
+            <v-toolbar-title>VueJS Application</v-toolbar-title>
             <v-spacer />
             <v-list class="d-flex align-center">
                 <v-list-item v-for="(menu, index) in menus" :key="index">
