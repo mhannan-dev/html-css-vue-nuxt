@@ -17,7 +17,7 @@
 </template>
 <script>
 export default {
-    name: "AppHeader",
+    name: "PortfolioSection",
     data() {
         return {
             menus: [
